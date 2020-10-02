@@ -8,7 +8,8 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
   // Return all pets currently up for adoption.
-
+  const pets = Pets.getAll();
+  res.status(200).send(pets);
 });
 
 router.delete('/', json, (req, res) => {
