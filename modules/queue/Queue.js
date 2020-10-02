@@ -1,6 +1,8 @@
+'use strict';
 class Queue {
   constructor() {
     // Set initial data.
+    
   }
 
   enqueue(data) {
@@ -20,4 +22,4 @@ class Queue {
   }
 }
 
-module.exports = Queue
+module.exports = Queue;

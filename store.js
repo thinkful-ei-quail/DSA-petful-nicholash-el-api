@@ -1,3 +1,4 @@
+'use strict';
 module.exports = {
   people: [
     'Randy Lahey',
@@ -227,4 +228,4 @@ module.exports = {
       story: 'Found in neighborhood'
     }
   ]
-}
+};
