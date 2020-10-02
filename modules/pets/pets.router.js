@@ -14,6 +14,10 @@ router.get('/', (req, res) => {
 
 router.delete('/', json, (req, res) => {
   // Remove a pet from adoption.
+  const {type} = req.body;
+  console.log(type);
+  Pets.dequeue(type);
+  res.status(204).end();
 });
 
 module.exports = router;
